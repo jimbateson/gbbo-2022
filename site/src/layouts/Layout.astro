@@ -7,54 +7,84 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
+		<link rel='preconnect' href='https://fonts.googleapis.com' />
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+		<link
+			href='https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400..900&display=swap'
+			rel='stylesheet'
+		/>
 	</head>
 	<body>
 		<slot />
+		<style>
+			:root {
+				--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+				--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+				--font-size-xl: clamp(5.44rem, 2.38vw + 1.85rem, 8.75rem);
+
+				--color-text: hsl(12, 5%, 4%);
+				--color-bg: hsl(10, 21%, 95%);
+				--color-border: hsl(17, 24%, 90%);
+				--color-yellow: rgb(255, 213, 61);
+				--color-blue: rgb(38, 92, 133);
+
+				--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+			}
+
+			html {
+				font-family: 'Source Sans 3', sans-serif;
+				font-size: var(--font-size-base);
+				color: var(--color-text);
+			}
+
+			body {
+				margin: 0;
+			}
+		</style>
+
+		<style is:global>
+			@font-face {
+				font-family: Source Sans;
+				font-weight: 400 900;
+				src: url('/fonts/sourcesans3-variablefont_wght-webfont.woff2')
+						format('woff2'),
+					url('/fonts/sourcesans3-variablefont_wght-webfont.woff')
+						format('woff');
+			}
+			h1 {
+				--h1-shadow-size: 0.04em;
+				-webkit-text-fill-color: transparent;
+				background-color: hotpink;
+				-webkit-background-clip: text;
+				font-size: var(--font-size-xl);
+				font-weight: 900;
+				line-height: 1.1;
+				text-shadow: calc(var(--h1-shadow-size) * -1)
+					calc(var(--h1-shadow-size) * -1) 0 var(--color-text);
+			}
+
+			h2,
+			h3 {
+				font-size: var(--font-size-lg);
+				margin-bottom: 0;
+			}
+
+			footer {
+				border-top: 1px solid var(--color-yellow);
+				padding: 2rem;
+				text-align: center;
+			}
+
+			footer p {
+				margin: 0;
+			}
+		</style>
 	</body>
 </html>
-<style>
-	:root {
-		--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
-		--font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-
-		--color-text: hsl(12, 5%, 4%);
-		--color-bg: hsl(10, 21%, 95%);
-		--color-border: hsl(17, 24%, 90%);
-	}
-
-	html {
-		font-family: system-ui, sans-serif;
-		font-size: var(--font-size-base);
-		color: var(--color-text);
-		background-color: var(--color-bg);
-	}
-
-	body {
-		margin: 0;
-	}
-
-
-</style>
-
-<style is:global>
-	h1 {
-		font-size: var(--font-size-xl);
-	}
-
-	h2 {
-		font-size: var(--font-size-lg);
-	}
-
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>

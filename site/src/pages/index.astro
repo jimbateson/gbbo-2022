@@ -1,96 +1,104 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Bakers from '../components/Bakers.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title='GBBO 2022'>
+	<header>
+		<svg
+			width='100%'
+			height='100%'
+			viewBox='0 0 1440 700'
+			xmlns='http://www.w3.org/2000/svg'
+			class='header-svg'
+			><path
+				d='M 0,700 C 0,700 0,350 0,350 C 43.02871870397644,395.6277614138439 86.05743740795288,441.2555228276878 148,418 C 209.94256259204712,394.7444771723122 290.79896907216494,302.60567010309273 366,312 C 441.20103092783506,321.39432989690727 510.74668630338726,432.3217967599411 561,428 C 611.2533136966127,423.6782032400589 642.2142857142858,304.1071428571428 699,243 C 755.7857142857142,181.8928571428572 838.3961708394696,179.24963181148757 911,229 C 983.6038291605304,278.7503681885124 1046.2010309278353,380.89432989690715 1093,397 C 1139.7989690721647,413.10567010309285 1170.79970544919,343.1730486008837 1226,321 C 1281.20029455081,298.8269513991163 1360.600147275405,324.41347569955815 1440,350 C 1440,350 1440,700 1440,700 Z'
+				stroke='none'
+				stroke-width='0'
+				fill='#ffd53d'
+				fill-opacity='1'
+				transform='rotate(-180 720 350)'></path>
+		</svg>
+		<div class='wrapper'>
+			<hgroup role='group'>
+				<h1>GBBO 2022</h1>
+				<h2>
+					Keep track of the bakers, find out more about them, who won
+					star baker, and the theme for each week. It's what she would
+					have wanted.
+				</h2>
+				<h3>Week 1: First week theme</h3>
+			</hgroup>
+		</div>
+	</header>
+
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			Check out the <code>src/pages</code> directory to get started.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Chat"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<div class='wrapper wrapper--large'>
+			<Bakers />
+		</div>
 	</main>
+
+	<footer>
+		<p>
+			Something pointless from <a
+				href='https://jamesbateson.co.uk/'
+				rel='noreferrer'>James Bateson</a
+			>.
+		</p>
+		<p>
+			All assets and copy from <a
+				href='https://thegreatbritishbakeoff.co.uk/'
+				rel='noreferrer'>the official Great British Bake Off site</a
+			>. Please don't sue my soggy bottom.
+		</p>
+	</footer>
 </Layout>
 
-<style>
-	:root {
-		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
-
+<style lang='scss'>
 	h1 {
-		margin: 2rem 0;
+		margin: 0;
+	}
+	main {
+		position: relative;
 	}
 
-	main {
+	.wrapper {
 		margin: auto;
 		padding: 1em;
-		max-width: 60ch;
+		max-width: 75ch;
 	}
 
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
+	.wrapper--large {
+		max-width: 55%;
 	}
 
-	@keyframes pulse {
-		0%,
-		100% {
-			background-position-y: 0%;
+	header {
+		padding-bottom: 10rem;
+
+		h3 {
+			display: inline-flex;
+			position: relative;
+
+			&:after {
+				background-color: hotpink;
+				bottom: 0.15em;
+				content: '';
+				height: 0.4em;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: auto;
+				transform: skew(-8deg);
+				width: 100%;
+				z-index: -1;
+			}
 		}
-		50% {
-			background-position-y: 80%;
-		}
 	}
 
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		background: #4f39fa;
-		padding: 1rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
-	}
-
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+	.header-svg {
+		height: auto;
+		position: absolute;
+		top: 0;
+		z-index: -1;
 	}
 </style>

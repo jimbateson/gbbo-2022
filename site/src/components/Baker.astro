@@ -1,0 +1,44 @@
+<li class={`bakers-item ${baker.bakerClass}`}>
+	<div class='image-wrap'>
+		<picture>
+			<source
+				srcset={`/assets/${baker.bakerImage}.webp`}
+				type='image/webp'
+			/>
+			<img
+				src={`/assets/${baker.bakerImage}.jpg`}
+				class='bakers-item__image js-baker-image'
+				alt={`Profile picture of ${baker.bakerName}`}
+				loading='lazy'
+				width='385'
+				height='385'
+			/>
+		</picture>
+	</div>
+
+	<div class='bakers-item__content'>
+		<h4>
+			{baker.bakerName}, {baker.bakerAge}
+		</h4>
+		<h5>{baker.bakerJob}</h5>
+
+		<p>{baker.bakerInfo}</p>
+
+		<dl class='bakers-item__stats'>
+			<div>
+				<dt>Star Baker</dt>
+				<dd>{baker.starBaker}</dd>
+			</div>
+
+			<div>
+				<dt>Innuendos</dt>
+				<dd>{baker.bakerInnuendo}</dd>
+			</div>
+
+			<div>
+				<dt>Hollywood Handshake</dt>
+				<dd>{baker.hollywoodHandshake}</dd>
+			</div>
+		</dl>
+	</div>
+</li>
