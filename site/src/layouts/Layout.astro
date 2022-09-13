@@ -108,5 +108,10 @@ const { title } = Astro.props;
 				}
 			}
 		</style>
+
+		<script src='/scripts/emoji.js' is:inline></script>
+		<script>
+			emojiCursor({ emoji: ['/assets/bezza.png'] });
+		</script>
 	</body>
 </html>

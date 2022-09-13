@@ -1,4 +1,4 @@
-export default function emojiCursor(options) {
+function emojiCursor(options) {
 	const possibleEmoji = (options && options.emoji) || [
 		'😀',
 		'😂',
@@ -46,19 +46,16 @@ export default function emojiCursor(options) {
 			let bgCanvas = document.createElement('canvas');
 			let bgContext = bgCanvas.getContext('2d');
 
-			bgCanvas.width = measurements.width;
-			bgCanvas.height = measurements.actualBoundingBoxAscent * 2;
+			bgCanvas.width = 128;
+			bgCanvas.height = 128;
 
-			bgContext.textAlign = 'center';
-			bgContext.font = '21px serif';
-			bgContext.textBaseline = 'middle';
-			bgContext.fillText(
-				emoji,
-				bgCanvas.width / 2,
-				measurements.actualBoundingBoxAscent
-			);
-
-			canvImages.push(bgCanvas);
+			base_image = new Image();
+			base_image.crossOrigin = 'anonymous';
+			base_image.src = emoji;
+			base_image.onload = function () {
+				bgContext.drawImage(base_image, 0, 0, 50, 50);
+				canvImages.push(bgCanvas);
+			};
 		});
 
 		bindEvents();
