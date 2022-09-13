@@ -16,6 +16,7 @@ function emojiCursor(options) {
 	const particles = [];
 	const canvImages = [];
 	let canvas, context;
+	let loaded = false;
 
 	function init() {
 		canvas = document.createElement('canvas');
@@ -46,8 +47,8 @@ function emojiCursor(options) {
 			let bgCanvas = document.createElement('canvas');
 			let bgContext = bgCanvas.getContext('2d');
 
-			bgCanvas.width = 128;
-			bgCanvas.height = 128;
+			bgCanvas.width = 50;
+			bgCanvas.height = 50;
 
 			base_image = new Image();
 			base_image.crossOrigin = 'anonymous';
@@ -55,11 +56,13 @@ function emojiCursor(options) {
 			base_image.onload = function () {
 				bgContext.drawImage(base_image, 0, 0, 50, 50);
 				canvImages.push(bgCanvas);
+				if (loaded === false) {
+					loaded = true;
+					bindEvents();
+					loop();
+				}
 			};
 		});
-
-		bindEvents();
-		loop();
 	}
 
 	// Bind events that are needed
@@ -191,3 +194,7 @@ function emojiCursor(options) {
 
 	init();
 }
+
+emojiCursor({
+	emoji: ['/assets/bezza.png'],
+});
