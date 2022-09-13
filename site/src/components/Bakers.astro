@@ -105,6 +105,12 @@ import Baker from './Baker.astro';
 		}
 	}
 
+	.baker--exited {
+		.image-wrap {
+			filter: grayscale(100%);
+		}
+	}
+
 	.bakers-item__image {
 		clip-path: url(#image-clip);
 		object-fit: cover;
