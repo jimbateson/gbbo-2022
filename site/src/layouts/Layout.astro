@@ -1,4 +1,5 @@
 ---
+import '../../public/styles/reset.css';
 export interface Props {
 	title: string;
 }
@@ -49,7 +50,7 @@ const { title } = Astro.props;
 			}
 		</style>
 
-		<style is:global>
+		<style lang='scss' is:global>
 			@font-face {
 				font-family: Source Sans;
 				font-weight: 400 900;
@@ -79,11 +80,32 @@ const { title } = Astro.props;
 			footer {
 				border-top: 1px solid var(--color-yellow);
 				padding: 2rem;
+				position: relative;
 				text-align: center;
+
+				img {
+					display: none;
+				}
 			}
 
 			footer p {
 				margin: 0;
+			}
+
+			.flow-vertical {
+				> * + * {
+					margin-top: 2rem;
+				}
+			}
+
+			@media (min-width: 1280px) {
+				footer img {
+					bottom: 8rem;
+					display: block;
+					max-width: 350px;
+					position: absolute;
+					right: 2rem;
+				}
 			}
 		</style>
 	</body>
