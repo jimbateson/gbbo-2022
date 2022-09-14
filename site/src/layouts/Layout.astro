@@ -114,7 +114,17 @@ const { title } = Astro.props;
 		</style>
 
 		<script src='/scripts/emoji.js' is:inline></script>
+		<script src='/scripts/confetti.js' is:inline></script>
+
 		<script>
+			if (document.querySelector('.star-baker')) {
+				document
+					.querySelector('.star-baker .bakers-item__image')
+					.addEventListener('mouseover', el => {
+						confetti(el.target, { spread: 300, drop: 300 });
+					});
+			}
+
 			emojiCursor({ emoji: ['/assets/bezza.png'] });
 		</script>
 	</body>
