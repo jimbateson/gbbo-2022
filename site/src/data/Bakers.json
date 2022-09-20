@@ -16,7 +16,7 @@
 		"bakerJob": "Supermarket Cashier",
 		"bakerImage": "carole",
 		"bakerClass": "",
-		"bakerInnuendo": "1",
+		"bakerInnuendo": "4",
 		"starBaker": "0",
 		"hollywoodHandshake": "0",
 		"bakerInfo": "Born and bred in the West Country, Carole lives on a Dorset hillside with her husband, Michael. Her segment on a local radio show is called ‘Compost Carole’; during which she shares her gardening know-how with listeners. Carole brings the artistry that she uses in her garden to her baking, creating colourful and eclectic bakes that are inspired by her passion for horticulture. She began her dedicated baking journey with a first birthday cake for her eldest granddaughter Maisie. Since then, she has refined her skills, using YouTube to teach herself the finer techniques of decoration. Her favourite flavours are fruity and punchy."
@@ -29,7 +29,7 @@
 		"bakerClass": "",
 		"bakerInnuendo": "0",
 		"starBaker": "0",
-		"hollywoodHandshake": "0",
+		"hollywoodHandshake": "1",
 		"bakerInfo": "The eldest of three children, Dawn lives with her partner Trevor (the self-styled person who tidies up the kitchen after her!) and is mother to three, step-mother to two, and gran/step-gran to four. Describing herself as an artist in and out of the kitchen, Dawn loves the challenge of an illusion cake (the more impossible-sounding, the better), favouring whacky and intricate designs that allow her to express her creative talent. She prides herself on her steady hand and attention to detail, especially when it comes to the intricacy required for lace patterns on biscuits. Her favourite flavours are lemon, salted caramel and anything nutty."
 	},
 	{
@@ -48,7 +48,7 @@
 		"bakerAge": "34",
 		"bakerJob": "Personal Assistant to Head Teacher",
 		"bakerImage": "janusz",
-		"bakerClass": "star-baker",
+		"bakerClass": "",
 		"bakerInnuendo": "0",
 		"starBaker": "1",
 		"hollywoodHandshake": "0",
@@ -70,7 +70,7 @@
 		"bakerAge": "18",
 		"bakerJob": "Student & Sales Assistant",
 		"bakerImage": "maisam",
-		"bakerClass": "",
+		"bakerClass": "baker--exited",
 		"bakerInnuendo": "0",
 		"starBaker": "0",
 		"hollywoodHandshake": "0",
@@ -81,10 +81,10 @@
 		"bakerAge": "29",
 		"bakerJob": "Architectural Assistant",
 		"bakerImage": "maxy",
-		"bakerClass": "",
-		"bakerInnuendo": "0",
+		"bakerClass": "star-baker",
+		"bakerInnuendo": "1",
 		"starBaker": "0",
-		"hollywoodHandshake": "0",
+		"hollywoodHandshake": "1",
 		"bakerInfo": "Swedish-born Maxy studied fine art and went on to achieve a Masters degree in Architecture, pausing her final qualifications to raise her two daughters, Tyra and Talia. She has DIY-ed every corner of her flat – from laying the flooring and resurfacing the balcony to painting the walls and hanging her own artwork. She began baking five years ago, with the arrival of her first daughter, and uses her strong artistic skills to create beautifully decorated celebration cakes. Her favourite flavours link to her Scandinavian upbringing – the sweet and delicate spice of cardamom and saffron buns and cinnamon rolls."
 	},
 	{
