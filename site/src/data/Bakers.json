@@ -27,7 +27,7 @@
 		"bakerJob": "I.T Manager",
 		"bakerImage": "dawn",
 		"bakerClass": "",
-		"bakerInnuendo": "0",
+		"bakerInnuendo": "1",
 		"starBaker": "0",
 		"hollywoodHandshake": "1",
 		"bakerInfo": "The eldest of three children, Dawn lives with her partner Trevor (the self-styled person who tidies up the kitchen after her!) and is mother to three, step-mother to two, and gran/step-gran to four. Describing herself as an artist in and out of the kitchen, Dawn loves the challenge of an illusion cake (the more impossible-sounding, the better), favouring whacky and intricate designs that allow her to express her creative talent. She prides herself on her steady hand and attention to detail, especially when it comes to the intricacy required for lace patterns on biscuits. Her favourite flavours are lemon, salted caramel and anything nutty."
@@ -48,9 +48,9 @@
 		"bakerAge": "34",
 		"bakerJob": "Personal Assistant to Head Teacher",
 		"bakerImage": "janusz",
-		"bakerClass": "",
+		"bakerClass": "star-baker",
 		"bakerInnuendo": "0",
-		"starBaker": "1",
+		"starBaker": "2",
 		"hollywoodHandshake": "0",
 		"bakerInfo": "Janusz grew up in Poland and moved to the UK 10 years ago. He is now living on the southeast coast with his boyfriend, Simon, and their sausage dog, Nigel. Apart from baking, Janusz’s passions include internet culture, watching drag (he even bought his boyfriend a statue of Ru Paul) and collecting movie props. He was inspired to bake by his mother, who always baked on a Saturday; a tradition Janusz continued when he moved away from home to go to university. He describes his baking style as ‘cartoon-like, colourful and camp’, and loves working Polish ingredients into British staples. His favourite flavours are ginger and chocolate."
 	},
@@ -60,7 +60,7 @@
 		"bakerJob": "Music Teacher",
 		"bakerImage": "kevin",
 		"bakerClass": "",
-		"bakerInnuendo": "0",
+		"bakerInnuendo": "1",
 		"starBaker": "0",
 		"hollywoodHandshake": "0",
 		"bakerInfo": "Surrounded by family and much-loved animals, Kevin is devoted to his nearest and dearest and spends as much time as possible with his wife, Rachel, and his siblings and their partners, laughing, eating and playing board games. A talented musician, who not only teaches but also performs, Kevin is principally a saxophonist, but is accomplished at the flute, the piano and the clarinet too. He began baking when he was 17. His ethos in the kitchen is to use the best, seasonal ingredients and to spend time refining his technique – with these in hand, he believes the presentation will take care of itself. He loves interesting combinations of fruits, herbs, nuts and spices."
@@ -81,7 +81,7 @@
 		"bakerAge": "29",
 		"bakerJob": "Architectural Assistant",
 		"bakerImage": "maxy",
-		"bakerClass": "star-baker",
+		"bakerClass": "",
 		"bakerInnuendo": "0",
 		"starBaker": "1",
 		"hollywoodHandshake": "1",
