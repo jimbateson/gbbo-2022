@@ -26,7 +26,7 @@
 		"bakerAge": "60",
 		"bakerJob": "I.T Manager",
 		"bakerImage": "dawn",
-		"bakerClass": "",
+		"bakerClass": "baker--exited",
 		"bakerInnuendo": "3",
 		"starBaker": "0",
 		"hollywoodHandshake": "1",
@@ -84,7 +84,7 @@
 		"bakerClass": "",
 		"bakerInnuendo": "1",
 		"starBaker": "2",
-		"hollywoodHandshake": "1",
+		"hollywoodHandshake": "2",
 		"bakerInfo": "Swedish-born Maxy studied fine art and went on to achieve a Masters degree in Architecture, pausing her final qualifications to raise her two daughters, Tyra and Talia. She has DIY-ed every corner of her flat – from laying the flooring and resurfacing the balcony to painting the walls and hanging her own artwork. She began baking five years ago, with the arrival of her first daughter, and uses her strong artistic skills to create beautifully decorated celebration cakes. Her favourite flavours link to her Scandinavian upbringing – the sweet and delicate spice of cardamom and saffron buns and cinnamon rolls."
 	},
 	{
@@ -103,7 +103,7 @@
 		"bakerAge": "30",
 		"bakerJob": "Nanny",
 		"bakerImage": "sandro",
-		"bakerClass": "star-baker",
+		"bakerClass": "",
 		"bakerInnuendo": "0",
 		"starBaker": "1",
 		"hollywoodHandshake": "0",
@@ -114,10 +114,10 @@
 		"bakerAge": "32",
 		"bakerJob": "Cardiovascular Research Associate",
 		"bakerImage": "syabira",
-		"bakerClass": "",
+		"bakerClass": "star-baker",
 		"bakerInnuendo": "2",
-		"starBaker": "0",
-		"hollywoodHandshake": "0",
+		"starBaker": "1",
+		"hollywoodHandshake": "1",
 		"bakerInfo": "Malaysian-born Syabira is one of seven children. She moved to the UK in 2013 to study for her PhD and is now happily settled in London with her boyfriend, Bradley. She loves gaming and often spends evenings playing an online World War II simulation game, which she credits with teaching her about leadership in the real world. Syabira started baking relatively recently – in 2017 – with a red velvet cake, which reminded her of the treats she shared with her friends back home. She is all for giving Malaysian flavour twists to British classics – chicken rendang cornish pasties are a particular favourite."
 	},
 	{
