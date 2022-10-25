@@ -59,7 +59,7 @@
 		"bakerAge": "33",
 		"bakerJob": "Music Teacher",
 		"bakerImage": "kevin",
-		"bakerClass": "",
+		"bakerClass": "baker--exited",
 		"bakerInnuendo": "1",
 		"starBaker": "0",
 		"hollywoodHandshake": "0",
@@ -116,7 +116,7 @@
 		"bakerImage": "syabira",
 		"bakerClass": "star-baker",
 		"bakerInnuendo": "2",
-		"starBaker": "1",
+		"starBaker": "2",
 		"hollywoodHandshake": "1",
 		"bakerInfo": "Malaysian-born Syabira is one of seven children. She moved to the UK in 2013 to study for her PhD and is now happily settled in London with her boyfriend, Bradley. She loves gaming and often spends evenings playing an online World War II simulation game, which she credits with teaching her about leadership in the real world. Syabira started baking relatively recently – in 2017 – with a red velvet cake, which reminded her of the treats she shared with her friends back home. She is all for giving Malaysian flavour twists to British classics – chicken rendang cornish pasties are a particular favourite."
 	},
