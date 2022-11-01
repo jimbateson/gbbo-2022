@@ -49,7 +49,7 @@
 		"bakerJob": "Personal Assistant to Head Teacher",
 		"bakerImage": "janusz",
 		"bakerClass": "",
-		"bakerInnuendo": "0",
+		"bakerInnuendo": "1",
 		"starBaker": "2",
 		"hollywoodHandshake": "0",
 		"bakerInfo": "Janusz grew up in Poland and moved to the UK 10 years ago. He is now living on the southeast coast with his boyfriend, Simon, and their sausage dog, Nigel. Apart from baking, Janusz’s passions include internet culture, watching drag (he even bought his boyfriend a statue of Ru Paul) and collecting movie props. He was inspired to bake by his mother, who always baked on a Saturday; a tradition Janusz continued when he moved away from home to go to university. He describes his baking style as ‘cartoon-like, colourful and camp’, and loves working Polish ingredients into British staples. His favourite flavours are ginger and chocolate."
@@ -81,7 +81,7 @@
 		"bakerAge": "29",
 		"bakerJob": "Architectural Assistant",
 		"bakerImage": "maxy",
-		"bakerClass": "",
+		"bakerClass": "baker--exited",
 		"bakerInnuendo": "1",
 		"starBaker": "2",
 		"hollywoodHandshake": "2",
@@ -116,7 +116,7 @@
 		"bakerImage": "syabira",
 		"bakerClass": "star-baker",
 		"bakerInnuendo": "2",
-		"starBaker": "2",
+		"starBaker": "3",
 		"hollywoodHandshake": "1",
 		"bakerInfo": "Malaysian-born Syabira is one of seven children. She moved to the UK in 2013 to study for her PhD and is now happily settled in London with her boyfriend, Bradley. She loves gaming and often spends evenings playing an online World War II simulation game, which she credits with teaching her about leadership in the real world. Syabira started baking relatively recently – in 2017 – with a red velvet cake, which reminded her of the treats she shared with her friends back home. She is all for giving Malaysian flavour twists to British classics – chicken rendang cornish pasties are a particular favourite."
 	},
